@@ -1,0 +1,56 @@
+.heading-container{
+    background-color: black;
+    padding: 30px;
+    margin: 20px;
+    padding: 20px;
+
+}
+.name{
+    color: white;
+    font-size: 30px;
+}
+
+.header-options{
+    margin-top: 10px;
+    float: right;
+    color: white;
+}
+
+.options{
+    margin: 10px;
+}
+
+.child1{
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+.image-name{
+    font-size: 50px;
+    margin-left: 50px;
+}
+.university{
+    color: aqua;
+    margin-left: 70px;
+}
+
+.icon{
+    margin-left: 100px;
+    font-size: 40px;
+}
+.icon-git{
+    margin-left: 100px;
+    font-size: 40px;
+}
+
+.parent{
+    display: flex;
+}
+h1{
+    margin: 40px;
+    font-size: 60px;
+}
+.details{
+    margin: 40px;
+}

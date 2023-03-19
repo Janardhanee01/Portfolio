@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="MyportfolioStyle.css">
+        <script>
+            var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 2000;	// Time Between Switch
+	 
+// Image List
+images[0] = "images/ss1.JPG";
+images[1] = "images/ss2.jpg";
+images[2] = "images/ss3.jpg";
+images[3] = "images/ss4.jpg";
+images[4] = "images/ss5.jpg";
+images[5] = "images/ss6.jpg";
+images[6] = "images/ss7.jpg";
+images[7] = "images/ss8.jpg";
+images[8] = "images/ss9.jpg";
+
+// Change Image
+function changeImg(){
+	document.slide.src = images[i];
+
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+        </script>
+    </head>
+    <body>
+        <div class="nav">
+            <a href="Myportfolio.html">Home</a>
+        </div>
+        <div class="proj">
+            <div class="text">
+                <h2>HIREsuME</h2>
+            <p>
+                This project will help user through the process that can be followed to build their resume using the 
+                templates provided which can even be customized. 
+                Automated resume builder is a web application which helps the student to get their resume in hand 
+                just by filling up a simple form where important credentials need to be filled.
+                The resume is downloadable in pdf format. Also the user can login again to access the previous 
+                resume that he had made
+                It helps the user to build their resume by just filling a simple form where important 
+                redentials need to be filled. The details filled are 
+                embedded with template provided which can also be customized. 
+                The finished resume is downloadable as a pdf.
+            </p>
+            <h3>Technologies used</h3>
+            <p>Node js to Process the information on the server(Node) and using some HTML 
+                to PDF libraries to generate the resume. ReactJS, React-Boostrap to create an interactive front end
+                HTML & CSS to Develop basic template(s) of the resume</p>
+        </div>
+        <div class="img">
+            <img name="slide" width="700" height="300" />
+        </div>
+        </div>
+            
+    </body>
+</html>

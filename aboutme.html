@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Me</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="MyportfolioStyle.css">
+        <script>
+            var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 2000;	// Time Between Switch
+	 
+// Image List
+images[0] = "images/f3.jpeg";
+images[1] = "images/f2.jpeg";
+images[2] = "images/f1.jpeg";
+images[3] = "images/f4.jpeg";
+images[4] = "images/f5.jpeg";
+function changeImg(){
+	document.slide.src = images[i];
+
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+        </script>
+    </head>
+    <body>
+        <div class="nav">
+            <a href="Myportfolio.html">Home</a>
+        </div>
+        <h2 id="abt">About Me</h2>
+        <div class="cont">
+            <div class="abt">
+                <p>I have a an experince of 1year in web deveopment. I'm also 
+                    intrested in Machine learing and data analytics. I have
+                also done an project on Hospital data analytics. </p>
+                <p>I was born and raised in chennai. we are a nuclear family of three. I&apos;m the only child 
+                    of my parents. My father runs his own business. My mother is a biology teacher for grade 9 and 10
+                     in Velammal Mat High Sec School, Surpet.</p>
+                <p>My grandfather is an Artist. He has done many potraits till date, one of the painting is Smt. Velammal
+                    &apos;s potrait which is kept at the main office and the auditorium. My grandpa is my role model
+                inspiration.</p>
+            </div>
+            <div class="img1">
+                <img name="slide" width="500" height="400" />
+            </div>
+        </div>
+        
+    </body>
+</html>
